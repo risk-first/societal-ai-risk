@@ -4,13 +4,19 @@ sidebar_position: 1
 title: Societal AI Risk Framework
 ---
 
+<p align="center">
+  <img src="/img/R1_logo_round_white.svg" alt="Risk First Logo" width="120" />
+</p>
+
 # Societal AI Risk Framework
+
+**[societal-ai-risk.riskfirst.org](https://societal-ai-risk.riskfirst.org)**
 
 A risk framework addressing **societal-level risks** due to Artificial Intelligence — examining the broad, civilisation-scale challenges that emerge as AI systems become more capable and pervasive.
 
 ## Why This Exists
 
-This framework was developed for the AI Risks chapter of [Risk-First Software Development](https://riskfirst.org). While many AI risk frameworks focus on:
+While many AI risk frameworks focus on:
 
 - Technical model safety
 - Organizational governance
@@ -20,9 +26,11 @@ This framework addresses a different scale: **what happens to society** as AI sy
 
 For a comprehensive view of AI risk frameworks across all domains, see the [MIT AI Risks Database](https://airisk.mit.edu).
 
-## Risk-First
+## Part of Risk-First
 
-This framework builds on [Risk-First Software Development](https://riskfirst.org) principles and can be navigated there as HTML (which provides a more joined up experience than just looking at these markdown files).
+This framework is part of [Risk-First Software Development](https://riskfirst.org) and was developed for the AI Risks chapter of the Risk-First book. Navigate the framework at [societal-ai-risk.riskfirst.org](https://societal-ai-risk.riskfirst.org) for a more joined-up experience.
+
+See also: [Agentic Software Development Risk Framework](https://agentic-software-development.riskfirst.org) — addressing risks when AI autonomously writes, modifies, and deploys code.
 
 ## What This Framework Covers
 

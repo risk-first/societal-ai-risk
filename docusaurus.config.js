@@ -7,7 +7,7 @@ const config = {
   tagline: 'A Risk Framework for Societal-Level AI Risks',
   favicon: 'img/favicon.ico',
 
-  url: 'https://societal-ai.riskfirst.org',
+  url: 'https://societal-ai-risk.riskfirst.org',
   baseUrl: '/',
   trailingSlash: false,
 
@@ -47,8 +47,9 @@ const config = {
       navbar: {
         title: 'Societal AI Risk',
         logo: {
-          alt: 'Societal AI Risk Logo',
-          src: 'img/logo.svg',
+          alt: 'Risk First Logo',
+          src: 'img/R1_logo_round_white.svg',
+          srcDark: 'img/R1_logo_round_black.svg',
         },
         items: [
           { to: '/risks', label: 'Risks', position: 'left' },
@@ -87,7 +88,7 @@ const config = {
             items: [
               { label: 'MIT AI Risk Database', href: 'https://airisk.mit.edu' },
               { label: 'NIST AI RMF', href: 'https://www.nist.gov/itl/ai-risk-management-framework' },
-              { label: 'Agentic SDLC', href: 'https://agentic.riskfirst.org' },
+              { label: 'Agentic SDLC', href: 'https://agentic-software-development.riskfirst.org' },
             ],
           },
         ],
