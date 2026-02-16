@@ -43,6 +43,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: 'support_us',
+        content:
+          'Risk-First Software Development Second Edition - Available Now! <a target="_blank" rel="noopener noreferrer" href="https://riskfirst.org/Risk-First-Second-Edition">Click here for details</a>',
+        backgroundColor: 'rgb(245, 62,121)',
+        textColor: '#ffffff',
+        isCloseable: true,
+      },
       image: 'img/social-card.png',
       navbar: {
         title: 'Societal AI Risk',
