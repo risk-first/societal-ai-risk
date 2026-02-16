@@ -1,0 +1,68 @@
+---
+# Document Types
+Control:
+  label: Control
+  permalink: Control
+  description: Practices and controls that mitigate societal AI risks
+Threat:
+  label: Threat
+  permalink: Threat
+  description: Societal risks arising from advanced AI systems
+
+# Specific Risks
+Emergent Behaviour:
+  label: Emergent Behaviour
+  permalink: Emergent-Behaviour
+Loss Of Diversity:
+  label: Loss Of Diversity
+  permalink: Loss-Of-Diversity
+Loss Of Human Control:
+  label: Loss Of Human Control
+  permalink: Loss-Of-Human-Control
+Social Manipulation:
+  label: Social Manipulation
+  permalink: Social-Manipulation
+Superintelligence With Malicious Intent:
+  label: Superintelligence With Malicious Intent
+  permalink: Superintelligence-With-Malicious-Intent
+Synthetic Intelligence Rivalry:
+  label: Synthetic Intelligence Rivalry
+  permalink: Synthetic-Intelligence-Rivalry
+Unintended Cascading Failures:
+  label: Unintended Cascading Failures
+  permalink: Unintended-Cascading-Failures
+
+# Specific Controls/Practices
+AI As Judge:
+  label: AI As Judge
+  permalink: AI-As-Judge
+Ecosystem Diversity:
+  label: Ecosystem Diversity
+  permalink: Ecosystem-Diversity
+Global AI Governance:
+  label: Global AI Governance
+  permalink: Global-AI-Governance
+Human In The Loop:
+  label: Human In The Loop
+  permalink: Human-In-The-Loop
+Interpretability:
+  label: Interpretability
+  permalink: Interpretability
+Kill Switch:
+  label: Kill Switch
+  permalink: Kill-Switch
+Multi-Stakeholder Oversight:
+  label: Multi-Stakeholder Oversight
+  permalink: Multi-Stakeholder-Oversight
+National AI Regulation:
+  label: National AI Regulation
+  permalink: National-AI-Regulation
+Public Awareness:
+  label: Public Awareness
+  permalink: Public-Awareness
+Replication Control:
+  label: Replication Control
+  permalink: Replication-Control
+Transparency:
+  label: Transparency
+  permalink: Transparency

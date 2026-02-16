@@ -1,0 +1,78 @@
+import React from 'react';
+import { usePluginData } from '@docusaurus/useGlobalData'
+import Link from '@docusaurus/Link';
+import { useLocation } from '@docusaurus/router';
+import styles from './styles.module.css'
+
+
+function DocItemImage({ doc }) {
+	// Use listImage from doc if available (set by category-listing plugin), otherwise fall back to generated path
+	const imageLink = doc.listImage || (() => {
+		const pl = doc.permalink;
+		const stripped = pl.endsWith('/') ? pl + "index" : pl;
+		return "/img/generated/single/" + stripped + ".svg";
+	})();
+
+	return (
+		<article className={styles.docItem}>
+			<div className={styles.columns}>
+				<div className={styles.left}>
+					{imageLink && <img src={imageLink} className={styles.articleImage} />}
+				</div>
+				<div className={styles.right}>
+					<Link key={doc.permalink} to={doc.permalink}><h3>{doc.title}</h3></Link>
+					<p className={styles.description}>{doc.description}</p>
+				</div>
+			</div>
+		</article>
+	);
+}
+
+const sorts = {
+	"title" : (a, b) => { return a.title.localeCompare(b.title) },
+	"default" : (a, b) => { return a.order - b.order }
+} 
+
+
+
+export default function TagList(props) {
+
+	function uniqueOnly(value, index, array) {
+		return array.map(o => o.permalink).indexOf(value.permalink) == index;
+	}
+
+	const allTags = usePluginData('category-listing');
+	const oneTag = props.tag ? allTags[props.tag] : Object.values(allTags)
+		.flatMap(a => a)
+		.filter(uniqueOnly)
+
+	if (!oneTag) {
+		return <p><em>No documents tagged</em></p>;
+	}
+
+	const filter = props.filter ? '/' + props.filter + '/' : ''
+	const location = useLocation().pathname;
+	
+	const sort = props.sort ?? "default"
+
+	//console.log("Filter: "+filter)
+
+	oneTag.sort(sorts[sort]).filter(uniqueOnly);
+	
+	// oneTag
+	//.filter(d => d.permalink.indexOf(filter) > -1)
+	//	.forEach(d => console.log(d.permalink))
+
+
+
+	return (
+		<div className={styles.tagList}>
+			{
+				oneTag
+					.filter(d => d.permalink.indexOf(filter) > -1)
+					.filter(d => d.permalink != location)
+					.map(d => <DocItemImage key={d.permalink} doc={d} />)
+			}
+		</div>
+	);
+}
