@@ -47,7 +47,7 @@ const config = {
         id: 'support_us',
         content:
           'Risk-First Software Development Second Edition - Available Now! <a target="_blank" rel="noopener noreferrer" href="https://riskfirst.org/Risk-First-Second-Edition">Click here for details</a>',
-        backgroundColor: 'rgb(245, 62,121)',
+        backgroundColor: '#166534',
         textColor: '#ffffff',
         isCloseable: true,
       },
